@@ -1,0 +1,24 @@
+<div class="login-content">
+  <h3 class="login-title">Formulario de Login</h3>
+  <form class="form-login" [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="form-content">
+      <label class="label-login" for="public_key">Public Key</label>
+      <input
+        class="input-login"
+        formControlName="public_key"
+        id="public_key"
+        type="text"
+      />
+      <label class="label-login" for="private_key">Private Key</label>
+      <input
+        class="input-login"
+        formControlName="private_key"
+        id="private_key"
+        type="text"
+      />
+    </div>
+    <div class="login-content-button">
+      <button type="submit" class="button-login">Login</button>
+    </div>
+  </form>
+</div>
