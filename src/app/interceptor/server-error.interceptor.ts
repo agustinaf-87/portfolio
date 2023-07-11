@@ -6,8 +6,8 @@ import {
 } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable, retry, catchError, throwError } from "rxjs";
-import { environment } from "../../../../environments/environment";
-import { NotificationService } from "../../services/error-notification/notification.service";
+import { environment } from "../../environments/environment";
+import { NotificationService } from "../services/error-notification/notification.service";
 
 export const maxRetries = 2;
 export const delayMs = 2000;
